@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 
 class HomePost {
   static Column homeSinglePost(BuildContext context) {
@@ -16,7 +17,7 @@ class HomePost {
                 children: [
                   CircleAvatar(
                     radius: 20,
-                    backgroundImage: NetworkImage(
+                    backgroundImage: ImageRelatedFunctions.getAvatar(
                       "https://avatars.githubusercontent.com/u/149824520?v=4",
                     ),
                   ),
@@ -86,7 +87,7 @@ class HomePost {
         ),
         AspectRatio(
           aspectRatio: 4 / 5,
-          child: Image.network(
+          child: ImageRelatedFunctions.getImage(
             "https://avatars.githubusercontent.com/u/149824520?v=4",
             fit: BoxFit.fitHeight,
           ),

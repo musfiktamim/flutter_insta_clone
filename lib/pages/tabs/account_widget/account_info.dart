@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 
 class Accountinfo {
   static Column accountinfo(BuildContext context) {
@@ -12,7 +13,7 @@ class Accountinfo {
             children: [
               CircleAvatar(
                 radius: 50,
-                backgroundImage: NetworkImage(
+                backgroundImage: ImageRelatedFunctions.getAvatar(
                   "https://avatars.githubusercontent.com/u/149824520?v=4",
                 ),
               ),

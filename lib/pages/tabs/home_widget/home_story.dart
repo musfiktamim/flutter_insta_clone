@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 
 class HomeStory {
   static SingleChildScrollView homeStorySection(BuildContext context) {
@@ -36,7 +37,7 @@ class HomeStory {
             borderRadius: BorderRadius.circular(65 / 2),
           ),
           clipBehavior: Clip.antiAlias,
-          child: Image.network(
+          child: ImageRelatedFunctions.getImage(
             "https://avatars.githubusercontent.com/u/149824520?v=4",
           ),
         ),
