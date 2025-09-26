@@ -42,13 +42,6 @@ jobs:
       - name: Run Tests
         run: flutter test --coverage
 
-      - name: Upload Coverage to Codecov
-        if: success() && always()
-        uses: codecov/codecov-action@v3
-        with:
-          files: coverage/lcov.info
-          fail_ci_if_error: true
-
       - name: Check Formatting
         run: dart format --set-exit-if-changed .
 
