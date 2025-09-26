@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:insta_clone_fixed/pages/tabs/AccountWidget/account_info.dart';
-import 'package:insta_clone_fixed/pages/tabs/AccountWidget/account_navigation_bar.dart';
-import 'package:insta_clone_fixed/pages/tabs/AccountWidget/account_posts_section.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_info.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_navigation_bar.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_posts_section.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});

@@ -6,8 +6,8 @@ import 'package:insta_clone_fixed/pages/tabs/account_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/create_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/home_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/main_page.dart';
-import 'package:insta_clone_fixed/pages/Tabs/Reels_Page.dart';
-import 'package:insta_clone_fixed/pages/Tabs/Search_Page.dart';
+import 'package:insta_clone_fixed/pages/tabs/reels_page.dart';
+import 'package:insta_clone_fixed/pages/tabs/search_page.dart';
 import 'package:insta_clone_fixed/pages/top/message_page.dart';
 import 'package:insta_clone_fixed/pages/top/notifications_page.dart';
 

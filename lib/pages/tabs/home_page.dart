@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:insta_clone_fixed/pages/Tabs/HomeWidget/home_navigation_bar.dart';
-import 'package:insta_clone_fixed/pages/Tabs/HomeWidget/home_post.dart';
-import 'package:insta_clone_fixed/pages/Tabs/HomeWidget/home_story.dart';
+import 'package:insta_clone_fixed/pages/tabs/home_widget/home_navigation_bar.dart';
+import 'package:insta_clone_fixed/pages/tabs/home_widget/home_post.dart';
+import 'package:insta_clone_fixed/pages/tabs/home_widget/home_story.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

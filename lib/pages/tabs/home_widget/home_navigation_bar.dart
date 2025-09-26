@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:insta_clone_fixed/pages/Top/Message_Page.dart';
-import 'package:insta_clone_fixed/pages/Top/Notifications_Page.dart';
+import 'package:insta_clone_fixed/pages/top/message_page.dart';
+import 'package:insta_clone_fixed/pages/top/notifications_Page.dart';
 
 class HomeNavigationBar {
   static CupertinoNavigationBar homenavigationbar(BuildContext context) {
