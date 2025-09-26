@@ -3,10 +3,10 @@ name: Flutter CI Full
 on:
   push:
     branches:
-      - main
+      - "**"
   pull_request:
     branches:
-      - main
+      - deve1
 
 jobs:
   flutter-ci:
@@ -22,9 +22,6 @@ jobs:
           flutter-version: '3.35.4'
           cache: true
 
-      - name: Flutter Doctor
-        run: flutter doctor
-
       - name: Cache Pub Packages
         uses: actions/cache@v3
         with:
@@ -32,6 +29,9 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
+
+      - name: Flutter Doctor
+        run: flutter doctor
 
       - name: Flutter Pub Get
         run: flutter pub get
@@ -43,13 +43,17 @@ jobs:
         run: flutter test --coverage
 
       - name: Upload Coverage to Codecov
+        if: success() && always()
         uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
           fail_ci_if_error: true
 
       - name: Check Formatting
-        run: flutter format --set-exit-if-changed .
+        run: dart format --set-exit-if-changed .
+
+      - name: Clean build cache
+        run: flutter clean
 
       - name: Build APK
         run: flutter build apk --release
