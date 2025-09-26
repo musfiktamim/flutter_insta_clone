@@ -39,6 +39,8 @@ class ImageRelatedFunctions {
       alignment: alignment,
       color: color,
       filterQuality: filterQuality,
+      errorBuilder: (context, error, stackTrace) =>
+          Image.asset("assets/dummy/placeholder.jpg"),
     );
   }
 }
