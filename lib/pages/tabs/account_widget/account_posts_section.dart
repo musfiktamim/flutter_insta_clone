@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:insta_clone_fixed/pages/Tabs/account_widget/account_posts/account_posts_collabs_section.dart';
-import 'package:insta_clone_fixed/pages/Tabs/account_widget/account_posts/account_posts_posts_section.dart';
-import 'package:insta_clone_fixed/pages/Tabs/account_widget/account_posts/account_posts_reels_section.dart';
-import 'package:insta_clone_fixed/pages/Tabs/account_widget/account_posts/account_posts_reposts_section.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_posts/account_posts_collabs_section.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_posts/account_posts_posts_section.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_posts/account_posts_reels_section.dart';
+import 'package:insta_clone_fixed/pages/tabs/account_widget/account_posts/account_posts_reposts_section.dart';
 
 class AccountPostsSection extends StatefulWidget {
   const AccountPostsSection({super.key});
