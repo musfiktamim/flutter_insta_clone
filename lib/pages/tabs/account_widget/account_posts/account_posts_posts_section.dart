@@ -5,6 +5,19 @@ class AccountPostsPostsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(child: Center(child: Text("This is post")));
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        mainAxisSpacing: 8,
+        crossAxisSpacing: 8,
+      ),
+      itemCount: 20,
+      itemBuilder: (context, index) => Container(
+        color: CupertinoColors.activeOrange,
+        child: Center(child: Text('Posts $index')),
+      ),
+    );
   }
 }

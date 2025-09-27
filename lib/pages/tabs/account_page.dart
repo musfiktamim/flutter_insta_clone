@@ -11,12 +11,11 @@ class AccountPage extends StatelessWidget {
     return CupertinoPageScaffold(
       navigationBar: Accountnavigationbar.accountnavigationbar(context),
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Accountinfo.accountinfo(context),
-            Accountinfo.accountBioInfo(context),
-            AccountPostsSection(),
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(child: Accountinfo.accountinfo(context)),
+            SliverToBoxAdapter(child: Accountinfo.accountBioInfo(context)),
+            SliverToBoxAdapter(child: AccountPostsSection())
           ],
         ),
       ),
