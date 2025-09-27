@@ -15,7 +15,7 @@ class AccountPage extends StatelessWidget {
           slivers: [
             SliverToBoxAdapter(child: Accountinfo.accountinfo(context)),
             SliverToBoxAdapter(child: Accountinfo.accountBioInfo(context)),
-            SliverToBoxAdapter(child: AccountPostsSection())
+            SliverToBoxAdapter(child: AccountPostsSection()),
           ],
         ),
       ),
