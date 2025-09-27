@@ -19,6 +19,5 @@ class AccountPostsCollabsSection extends StatelessWidget {
         child: Center(child: Text('Collab $index')),
       ),
     );
-    ;
   }
 }
