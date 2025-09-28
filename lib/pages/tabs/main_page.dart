@@ -17,19 +17,19 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   final PageController _pageController = PageController(initialPage: 0);
 
-  List<Widget> showing_page = [_TabBar(), MessagePage()];
+  List<Widget> showingPage = [taar(), MessagePage()];
 
   @override
   Widget build(BuildContext context) {
     return PageView(
       controller: _pageController,
       scrollDirection: Axis.horizontal,
-      children: showing_page,
+      children: showingPage,
     );
   }
 }
 
-_TabBar() => Builder(
+taar() => Builder(
   builder: (context) {
     List<Widget> tabPages = [
       HomePage(),
@@ -55,19 +55,3 @@ _TabBar() => Builder(
     );
   },
 );
-
-    // CupertinoTabScaffold(
-    //   tabBar: CupertinoTabBar(
-    //     activeColor: CupertinoColors.activeOrange,
-    //     items: <BottomNavigationBarItem>[
-    //       BottomNavigationBarItem(icon: Icon(Icons.home_rounded)),
-    //       BottomNavigationBarItem(icon: Icon(Icons.search_rounded)),
-    //       BottomNavigationBarItem(icon: Icon(Icons.add_box_rounded)),
-    //       BottomNavigationBarItem(icon: Icon(Icons.play_arrow_rounded)),
-    //       BottomNavigationBarItem(icon: Icon(Icons.person_rounded)),
-    //     ],
-    //   ),
-    //   tabBuilder: (context, index) {
-    //     return tabPages[index];
-    //   },
-    // )
