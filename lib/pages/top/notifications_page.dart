@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 import 'package:insta_clone_fixed/pages/top/notifications_widget/single_show_nitification_widget.dart';
 
 class NotificationsPage extends StatelessWidget {

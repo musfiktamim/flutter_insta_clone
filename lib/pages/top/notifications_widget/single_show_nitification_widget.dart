@@ -41,7 +41,7 @@ class _SingleShowNitificationWidgetState
           ],
         ),
       ),
-      trailing: Container(
+      trailing: SizedBox(
         width: 50,
         height: 50,
         child: ClipRRect(
