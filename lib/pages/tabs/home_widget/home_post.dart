@@ -93,9 +93,11 @@ class HomePost {
           ),
         ),
         Padding(
-          padding: EdgeInsetsGeometry.symmetric(vertical: 4, horizontal: 10),
+          padding: EdgeInsetsGeometry.symmetric(vertical: 5, horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            spacing: 7,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

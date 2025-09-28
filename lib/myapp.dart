@@ -5,7 +5,6 @@ import 'package:insta_clone_fixed/routes/my_route.dart';
 
 class Myapp extends StatelessWidget {
   const Myapp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(

@@ -11,6 +11,22 @@ class HomePage extends StatelessWidget {
     return CupertinoPageScaffold(
       navigationBar: HomeNavigationBar.homenavigationbar(context),
       child: SafeArea(
+        child: CustomScrollView(
+          slivers: <Widget>[
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsetsGeometry.only(top: 10),
+                child: HomeStory.homeStorySection(context),
+              ),
+            ),
+
+            SliverList.builder(
+              itemBuilder: (context, index) => HomePost.homeSinglePost(context),
+              itemCount: 10,
+            ),
+          ],
+        ),
+        /*
         child: Column(
           children: [
             Padding(
@@ -25,7 +41,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ],
-        ),
+        ),*/
       ),
     );
   }
