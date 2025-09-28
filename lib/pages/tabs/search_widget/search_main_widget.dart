@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 
-class SearchMain {
-  static CustomScrollView intialsearchshowingcontent(BuildContext context) {
+class SearchMainWidget extends StatelessWidget {
+  const SearchMainWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
         SliverPadding(

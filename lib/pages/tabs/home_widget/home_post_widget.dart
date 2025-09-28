@@ -2,8 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 
-class HomePost {
-  static Column homeSinglePost(BuildContext context) {
+class HomePostWidget extends StatelessWidget {
+  const HomePostWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
       spacing: 5,
       children: [
