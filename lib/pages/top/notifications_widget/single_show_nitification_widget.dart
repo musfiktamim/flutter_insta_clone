@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:insta_clone_fixed/important_functions/image_related_functions.dart';
 
 class SingleShowNitificationWidget extends StatefulWidget {
