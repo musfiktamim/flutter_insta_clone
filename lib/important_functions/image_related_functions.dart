@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 class ImageRelatedFunctions {
   static ImageProvider getAvatar(String url) {
     if (const bool.fromEnvironment("FLUTTER_TEST")) {
-      return const AssetImage("/assets/dummy/placeholder.jpg");
+      return const AssetImage("assets/dummy/placeholder.jpg");
     }
     return NetworkImage(url);
   }
@@ -20,7 +20,7 @@ class ImageRelatedFunctions {
   }) {
     if (const bool.fromEnvironment("FLUTTER_TEST")) {
       return Image.asset(
-        "/assets/dummy/placeholder.jpg",
+        "assets/dummy/placeholder.jpg",
         key: key,
         width: width,
         height: height,
@@ -40,7 +40,7 @@ class ImageRelatedFunctions {
       color: color,
       filterQuality: filterQuality,
       errorBuilder: (context, error, stackTrace) =>
-          Image.asset("/assets/dummy/placeholder.jpg"),
+          Image.asset("assets/dummy/placeholder.jpg"),
     );
   }
 }
