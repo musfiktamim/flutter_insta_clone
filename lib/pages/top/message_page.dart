@@ -31,7 +31,7 @@ class MessagePage extends StatelessWidget {
                 subtitle: Text("Hey whatsup bro 🚎", maxLines: 2),
                 trailing: Icon(CupertinoIcons.camera),
               ),
-            )
+            ),
           ],
         ),
       ),
