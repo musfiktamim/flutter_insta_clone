@@ -14,9 +14,14 @@ class AccountPostsCollabsSection extends StatelessWidget {
         crossAxisSpacing: 8,
       ),
       itemCount: 20,
-      itemBuilder: (context, index) => Container(
-        color: CupertinoColors.systemRed,
-        child: Center(child: Text('Collab $index')),
+      itemBuilder: (context, index) => ClipRRect(
+        clipBehavior: Clip.antiAlias,
+        // color: CupertinoColors.activeOrange,
+        borderRadius: BorderRadiusGeometry.circular(10),
+        child: Container(
+          color: CupertinoColors.systemRed,
+          child: Center(child: Text('Collab $index')),
+        ),
       ),
     );
   }

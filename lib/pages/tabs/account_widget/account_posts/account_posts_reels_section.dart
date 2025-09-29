@@ -10,13 +10,18 @@ class AccountPostsReelsSection extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        mainAxisSpacing: 3,
-        crossAxisSpacing: 3,
+        mainAxisSpacing: 8,
+        crossAxisSpacing: 8,
       ),
       itemCount: 20,
-      itemBuilder: (context, index) => Container(
-        color: CupertinoColors.systemPurple,
-        child: Center(child: Text('Reels $index')),
+      itemBuilder: (context, index) => ClipRRect(
+        clipBehavior: Clip.antiAlias,
+        // color: CupertinoColors.activeOrange,
+        borderRadius: BorderRadiusGeometry.circular(10),
+        child: Container(
+          color: CupertinoColors.systemPurple,
+          child: Center(child: Text('Reel $index')),
+        ),
       ),
     );
   }

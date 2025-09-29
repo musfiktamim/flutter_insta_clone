@@ -14,9 +14,14 @@ class AccountPostsRepostsSection extends StatelessWidget {
         crossAxisSpacing: 8,
       ),
       itemCount: 20,
-      itemBuilder: (context, index) => Container(
-        color: CupertinoColors.activeBlue,
-        child: Center(child: Text('Repost $index')),
+      itemBuilder: (context, index) => ClipRRect(
+        clipBehavior: Clip.antiAlias,
+        // color: CupertinoColors.activeOrange,
+        borderRadius: BorderRadiusGeometry.circular(10),
+        child: Container(
+          color: CupertinoColors.systemBlue,
+          child: Center(child: Text('Repost $index')),
+        ),
       ),
     );
   }

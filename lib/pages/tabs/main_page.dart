@@ -5,7 +5,7 @@ import 'package:insta_clone_fixed/pages/tabs/create_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/home_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/reels_page.dart';
 import 'package:insta_clone_fixed/pages/tabs/search_page.dart';
-import 'package:insta_clone_fixed/pages/top/message_page.dart';
+// import 'package:insta_clone_fixed/pages/top/message_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -15,29 +15,15 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final PageController _pageController = PageController(initialPage: 0);
-
-  List<Widget> showingPage = [taar(), MessagePage()];
-
+  List<Widget> tabPages = [
+    HomePage(),
+    SearchPage(),
+    CreatePage(),
+    ReelsPage(),
+    AccountPage(),
+  ];
   @override
   Widget build(BuildContext context) {
-    return PageView(
-      controller: _pageController,
-      scrollDirection: Axis.horizontal,
-      children: showingPage,
-    );
-  }
-}
-
-taar() => Builder(
-  builder: (context) {
-    List<Widget> tabPages = [
-      HomePage(),
-      SearchPage(),
-      CreatePage(),
-      ReelsPage(),
-      AccountPage(),
-    ];
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         activeColor: CupertinoColors.activeOrange,
@@ -53,5 +39,5 @@ taar() => Builder(
         return tabPages[index];
       },
     );
-  },
-);
+  }
+}
